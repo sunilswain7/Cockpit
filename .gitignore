@@ -1,0 +1,38 @@
+# =========================
+# F1 Telemetry Project Ignore
+# =========================
+
+# 1. Python / Flask (Backend)
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/venv/
+**/env/
+**/.env
+pip-log.txt
+
+# 2. SQLite Cache Database
+# NEVER push the cache database to GitHub!
+**/*.db
+**/*.sqlite3
+f1_cache.db
+backend/f1_cache.db
+
+# 3. Node.js / Next.js (Frontend)
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+
+# 4. OS & Editor Junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 5. Docker (Optional, usually good to ignore local overrides)
+docker-compose.override.yml
